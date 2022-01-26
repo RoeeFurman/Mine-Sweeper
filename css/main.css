@@ -1,0 +1,69 @@
+
+
+*{
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+}
+
+button {
+    border-radius: 7px;
+    margin-bottom: 20px;
+    height: 40px ;
+    width: 100px;
+    font-size: 18px;
+}
+
+body {
+    text-align: center;
+    margin: auto;
+    background-color: rgb(201, 198, 198);
+}
+
+h1{
+    font-size: 70px;
+}
+
+h2 {
+    color: purple;
+    margin-bottom: 20px;
+}
+
+table{
+    width: 700px;
+    height: 700px;
+}
+
+.board{
+    margin: auto;
+}
+
+.flipped {
+    background-color: purple;
+}
+
+.board-table {
+    height: 200px;
+    background-color: purple;
+    width: 500px;
+    margin: auto;
+}
+
+td {
+    height: 50px;
+    background-color: rgb(148, 108, 148);
+    width: 50px;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 3px;
+
+}
+
+.mine {
+font-size: 30px;
+}
+
+.flag {
+    font-size: 20px;
+    }
+
