@@ -1,41 +1,47 @@
 
 
 *{
-    text-align: center;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 button {
-    border-radius: 7px;
-    margin-bottom: 20px;
-    height: 40px ;
-    width: 100px;
-    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 80px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  rgb(53, 36, 53);
 }
 
 body {
     text-align: center;
-    margin: auto;
     background-color: rgb(201, 198, 198);
 }
 
 h1{
-    font-size: 70px;
+    font-size: 60px;
+    margin-top: 15px;
 }
 
 h2 {
     color: purple;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
 }
 
 table{
-    width: 700px;
-    height: 700px;
-}
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
 
-.board{
-    margin: auto;
 }
 
 .flipped {
@@ -50,20 +56,89 @@ table{
 }
 
 td {
-    height: 50px;
+    height: 30px;
     background-color: rgb(148, 108, 148);
-    width: 50px;
-    font-size: 35px;
+    width: 30px;
+    font-size: 22px;
     text-align: center;
     border-radius: 3px;
-
 }
 
-.mine {
-font-size: 30px;
+.bottom-board{
+    /* display: block; */
+    width: 480px;
+    height: 40px;
+    background-color: rgb(88, 21, 88);
+    /* background-color: rgb(179, 170, 179); */
+    /* text-align: center; */
+    vertical-align: auto;
+    line-height: 40px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
 }
 
-.flag {
+.timer {
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    vertical-align: auto;
+    line-height: 40px;
+    /* display: inline; */
+    float: right;
+}
+
+.life {
+    width: 100px;
+    height: 40px;
+    vertical-align: auto;
+    line-height: 40px;
+    font-size: 28px;
+    color: red;
+    /* display: inline; */
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.smiley {
+    width: 38px;
+    /* display: inline; */
+    font-size: 30px;
+    /* float: left; */
+    cursor: pointer;
+}
+
+.special-board{
+        /* display: block; */
+        margin-top: 15px;
+        width: 450px;
+        height: 40px;
+        background-color: rgb(43, 10, 43);
+        /* background-color: rgb(184, 162, 184); */
+        /* text-align: center; */
+        vertical-align: auto;
+        line-height: 40px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+}
+
+.hint{
+        width: 102px;
+        height: 40px;
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        text-align: center;
+        transition: background-color 0.5s;
+}
+
+.hint:hover {
+    background-color:  rgb(88, 21, 88);
+}
+
+.emoji {
     font-size: 20px;
     }
 
