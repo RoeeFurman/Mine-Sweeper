@@ -8,6 +8,8 @@
     <title>Mine Sweeper</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+<div class="board-background">
+
 <h1>MineSweeper</h1>
 <h2><span class="title">Good Luck!</span></h2>
 <button onclick="changeDifficulty(4,2)">Beginner</button>
@@ -15,13 +17,9 @@
 <button onclick="changeDifficulty(12,30)">Expert</button>
 
 <body onload="initGame()">
-    <!-- <h2>Score: <span>0</span></h2> -->
     <table>
         <tbody class="board"></tbody>
     </table>
-    <!-- <div class="board"></div> -->
-    <!-- <div class="modal"> -->
-        <!-- <button onclick="initGame()">Play</button> -->
         <div class="bottom-board">
             <div class="life"></div>
             <div class="timer">00:00</div>
@@ -30,12 +28,11 @@
 
         <div class="special-board">
             <div class="hint" onclick="hintOn()">Hint?<span class="hint-icon">⚪⚪⚪</span></div>
-            <div class="hint">Undo</div>
-            <div class="hint">Safe Click</div>
-            <div class="hint">Set Mines</div>
+            <!-- <div class="hint">Safe Click</div>
+            <div class="hint">Set Mines</div> -->
 
         </div>
-
+    </div>
 
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
