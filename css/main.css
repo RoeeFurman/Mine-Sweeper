@@ -123,7 +123,7 @@ td:hover {
 .special-board2{
     margin-top: 10px;
     width: 350px;
-    height: 25x;
+    height: 25px;
     background-color: rgb(24, 11, 24);
     /* background-color: rgb(184, 162, 184); */
     vertical-align: auto;
@@ -193,7 +193,6 @@ td:hover {
     line-height: 22px;
     color: black;
     transition: background-color 0.5s;
-    font-weight: 800;
 }
 
 .seven-boom:hover {
