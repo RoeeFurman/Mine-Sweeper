@@ -1,5 +1,5 @@
 
-
+//utils JS
 
 function renderBoard(mat, selector) {
   var strHTML = '<table border="0"><tbody class="board-table">';
@@ -18,9 +18,35 @@ function renderBoard(mat, selector) {
   elContainer.innerHTML = strHTML;
 }
 
+function runTimer() {
+  var clock;
+  var min = 0;
+
+  gInterval = setInterval(() => {
+      gGame.secsPassed += 1;
+      if (gGame.secsPassed < 10) {
+          clock = '0' + min + ':0' + gGame.secsPassed;
+      } else if (gGame.secsPassed < 60) {
+          clock = '0' + min + ':' + gGame.secsPassed;
+      } else {
+          min += 1;
+          gGame.secsPassed = 0;
+          clock = '0' + min + ':0' + gGame.secsPassed;
+      }
+
+      var elTimer = document.querySelector('.timer');
+      elTimer.innerText = clock;
+  }, 1000)
+}
+
 function renderCell(location, value) {
   var elCell = document.querySelector(`.cell-${location.i}-${location.j}`);
   elCell.innerHTML = value;
+}
+
+function changeHTML(value, classname) {
+  var smiley = document.querySelector(classname);
+  return smiley.innerHTML = value;
 }
 
 function getRandomInt(min, max) {

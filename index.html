@@ -27,11 +27,15 @@
         </div>
 
         <div class="special-board">
-            <div class="hint" onclick="hintOn()">Hint?<span class="hint-icon">⚪⚪⚪</span></div>
-            <!-- <div class="hint">Safe Click</div>
-            <div class="hint">Set Mines</div> -->
-
+            <div class="hint" onclick="hintOn()">Hint? <span class="hint-icon">⚪⚪⚪</span></div>
+            <div class="seven-boom" onclick="sevenBoom()">7Boom</div>
+         <div class="safe" onclick="safeMode()"><span class="safe-icon"> 🎯🎯🎯</span> Safe Click</div>
         </div>
+        
+        <div class="special-board2">
+            <div class="set-mines" onclick="setMinesManually()">Set Mines Manually <span class="status-manual-mines"></span></div>
+        </div>
+        <h6>© Roee Furman - Coding Academy 2022</h6>
     </div>
 
     <script src="js/utils.js"></script>

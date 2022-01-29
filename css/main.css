@@ -2,13 +2,13 @@
 
 *{
     margin: auto;
-    margin-top: 0px;
+    /* margin-top: 0px; */
 }
 
 button {
     border-radius: 4px;
-    margin-bottom: 15px;
-    height: 30px;
+    margin-bottom: 10px;
+    height: 25px;
     width: 80px;
     font-size: 15px;
     background-color: black;
@@ -16,12 +16,6 @@ button {
     transition: background-color 0.2s;
     cursor: pointer;
 }
-
-/* .board-background { */
-    /* height: 700px; */
-    /* width: 600px; */
-    /* background-color: rgb(201, 198, 198); */
-/* } */
 
 button:hover {
     background-color:  rgb(53, 36, 53);
@@ -34,19 +28,19 @@ body {
 }
 
 h1{
-    font-size: 60px;
-    margin-top: 30px;
+    font-size: 50px;
+    margin-top: 10px;
 }
 
 h2 {
     color: purple;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     font-size: 20px;
 }
 
 table{
-    width: 520px;
-    height: 520px;
+    width: 530px;
+    height: 530px;
     cursor: pointer;
 
 }
@@ -63,32 +57,36 @@ table{
 }
 
 td {
-    height: 30px;
+    height: 32px;
     background-color: rgb(148, 108, 148);
-    width: 30px;
+    width: 32px;
     font-size: 22px;
     text-align: center;
     border-radius: 3px;
+    transition: background-color 0.05s;
+}
+
+td:hover {
+   background-color: rgb(153, 128, 153);
 }
 
 .bottom-board{
-    width: 450px;
-    height: 40px;
+    width: 490px;
+    height: 35px;
     background-color: rgb(88, 21, 88);
-
     vertical-align: auto;
-    line-height: 40px;
+    line-height: 35px;
     color: white;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .timer {
     font-size: 20px;
     width: 100px;
-    height: 40px;
+    height: 35px;
     vertical-align: auto;
-    line-height: 40px;
+    line-height: 35px;
     float: right;
 }
 
@@ -96,8 +94,8 @@ td {
     width: 100px;
     height: 40px;
     vertical-align: auto;
-    line-height: 40px;
-    font-size: 28px;
+    line-height: 35px;
+    font-size: 25px;
     color: red;
     float: left;
     text-align: left;
@@ -106,39 +104,102 @@ td {
 
 .smiley {
     width: 38px;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
 }
 
 .special-board{
-        margin-top: 15px;
-        width: 300px;
-        /* width: 450px; */
-        height: 40px;
+        margin-top: 10px;
+        width: 440px;
+        height: 35px;
         background-color: rgb(43, 10, 43);
-        /* background-color: rgb(184, 162, 184); */
         vertical-align: auto;
-        line-height: 40px;
+        line-height: 35px;
         color: white;
         border-radius: 5px;
         cursor: pointer;
 }
 
+.special-board2{
+    margin-top: 10px;
+    width: 350px;
+    height: 25x;
+    background-color: rgb(24, 11, 24);
+    /* background-color: rgb(184, 162, 184); */
+    vertical-align: auto;
+    line-height: 25px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .hint{
-        width: 102px;
-        height: 40px;
+        width: 130px;
+        height: 35px;
         font-size: 15px;
         color: rgb(255, 255, 255);
-        display: inline-block;
+        float: left;
         text-align: center;
         transition: background-color 0.5s;
+        border-radius: 5px;
+}
+
+
+.safe{
+    width: 140px;
+    height: 35px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    float: right;
+    transition: background-color 0.5s;
+    border-radius: 5px;
 }
 
 .hint:hover {
     background-color:  rgb(88, 21, 88);
+
+    /* background-color:  rgb(255, 247, 177); */
+}
+
+.safe:hover {
+    background-color:  rgb(88, 21, 88);
+    /* background-color:  rgb(255, 247, 177); */
 }
 
 .emoji {
     font-size: 20px;
     }
 
+.set-mines {
+    width: 350px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+.set-mines:hover{
+    background-color:  rgb(88, 21, 88);
+    border-radius: 5px;
+}
+
+.seven-boom {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 65px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: auto;
+    line-height: 22px;
+    color: black;
+    transition: background-color 0.5s;
+    font-weight: 800;
+}
+
+.seven-boom:hover {
+    background-color: rgb(0, 183, 255);
+}
+
+h6{
+    margin-top: 5px;
+}
